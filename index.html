@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="./main.js"></script>
+
+
+</head>
+<body>
+<div id='container'>
+<div id='textContainer'>
+<input type="textentry"></input>
+</div>
+<div id='buttonContainer'>
+  <button class="addTextEntry" onclick="addCell()">Add Cell</button>
+  <button class="removeTextEntry" onclick="removeCell()">Remove Cell</button>
+  <button class="sortTextEntry" onclick="sortCells()">Sort</button>
+</div>
+</div>
+
+
+</body>
+</html>
+<script>
+function upDateForegroundColor(color){
+  document.getElementById('foreground').className = color;
+}
+function upDateBackgroundColor(color){
+  document.getElementById('background').className = color;
+}
+</script>

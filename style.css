@@ -1,0 +1,18 @@
+#container{
+  background-color: lightgray;
+  margin: auto;
+  height: auto;
+  width: 500px;
+}
+
+#textContainer{
+  margin: auto;
+}
+
+#buttonContainer{
+  margin: auto;
+}
+
+.hideText{
+  display: none;
+}
