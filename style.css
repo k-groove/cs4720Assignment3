@@ -6,11 +6,15 @@
 }
 
 #textContainer{
-  margin: auto;
+  margin-left: 100px;
 }
 
 #buttonContainer{
-  margin: auto;
+  margin-left: 130px;
+}
+
+li{
+  margin: 5px;
 }
 
 .hideText{

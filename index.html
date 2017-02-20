@@ -4,30 +4,18 @@
     <meta charset="UTF-8">
     <title>Assignment 3</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="./main.js"></script>
-
-
 </head>
 <body>
-<div id='container'>
-<div id='textContainer'>
-<input type="textentry"></input>
-</div>
-<div id='buttonContainer'>
+<div id="container">
+<ol id="textContainer">
+<li class="inputList"><input type="textentry"></li>
+</ol>
+<div id="buttonContainer">
   <button class="addTextEntry" onclick="addCell()">Add Cell</button>
   <button class="removeTextEntry" onclick="removeCell()">Remove Cell</button>
   <button class="sortTextEntry" onclick="sortCells()">Sort</button>
+</ol>
 </div>
-</div>
-
-
 </body>
+<script src="./main.js"></script>
 </html>
-<script>
-function upDateForegroundColor(color){
-  document.getElementById('foreground').className = color;
-}
-function upDateBackgroundColor(color){
-  document.getElementById('background').className = color;
-}
-</script>
