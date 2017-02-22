@@ -1,5 +1,11 @@
+body{
+  background-color: green;
+}
+
 #container{
   background-color: lightgray;
+  border: 1px solid black;
+  padding: 20px;
   margin: auto;
   height: auto;
   width: 500px;
@@ -22,5 +28,5 @@ li{
 }
 
 label{
-  margin-left: 5px;
+  margin-left: 15px;
 }
