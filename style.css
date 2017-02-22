@@ -1,32 +1,32 @@
-body{
-  background-color: green;
+body {
+    background-color: green;
 }
 
-#container{
-  background-color: lightgray;
-  border: 1px solid black;
-  padding: 20px;
-  margin: auto;
-  height: auto;
-  width: 500px;
+#container {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    width: 500px;
 }
 
-#textContainer{
-  margin-left: 100px;
+#textContainer {
+    margin-left: 100px;
 }
 
-#buttonContainer{
-  margin-left: 130px;
+#buttonContainer {
+    margin-left: 130px;
 }
 
-li{
-  margin: 5px;
+li {
+    margin: 5px;
 }
 
-.hideText{
-  display: none;
+.hideText {
+    display: none;
 }
 
-label{
-  margin-left: 15px;
+label {
+    margin-left: 15px;
 }

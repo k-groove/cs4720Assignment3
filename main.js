@@ -45,9 +45,9 @@ function sortCells() {
 function updateText() {
     var text = document.getElementsByTagName('li');
     for (var i = 0; i < text.length; i++) {
-      var inputLength = text[i].getElementsByTagName('input')[0].value.length;
-      console.log(inputLength);
-      text[i].getElementsByTagName('label')[0].innerHTML = inputLength;
+        var inputLength = text[i].getElementsByTagName('input')[0].value.length;
+        console.log(inputLength);
+        text[i].getElementsByTagName('label')[0].innerHTML = inputLength;
         // console.log(text[i].value);
     }
 }
