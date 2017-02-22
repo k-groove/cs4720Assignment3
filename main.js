@@ -29,6 +29,7 @@ function sortCells() {
   var temp = [];
     var items = document.getElementsByTagName('input');
     for(i=0;i<items.length;i++){
+      if(!items[i].parentElement.classList.contains('hideText'))
       temp.push(items[i].value);
     }
     temp.sort();
