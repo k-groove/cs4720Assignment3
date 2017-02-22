@@ -12,7 +12,10 @@ function addCell() {
         var textEntry = document.createElement('input');
         textEntry.type = "text";
         textEntry.value = "";
+        var label = document.createElement("Label");
         newLi.appendChild(textEntry);
+        newLi.appendChild(label);
+        newLi.addEventListener("input", updateText);
     }
 }
 
@@ -26,14 +29,25 @@ function removeCell() {
 }
 
 function sortCells() {
-  var temp = [];
+    var temp = [];
     var items = document.getElementsByTagName('input');
-    for(i=0;i<items.length;i++){
-      if(!items[i].parentElement.classList.contains('hideText'))
-      temp.push(items[i].value);
+    for (var i = 0; i < items.length; i++) {
+        if (!items[i].parentElement.classList.contains('hideText'))
+            temp.push(items[i].value);
     }
     temp.sort();
-    for(i=0;i<items.length;i++){
-      items[i].value = temp[i];
+    for (i = 0; i < temp.length; i++) {
+        items[i].value = temp[i];
+    }
+    updateText();
+}
+
+function updateText() {
+    var text = document.getElementsByTagName('li');
+    for (var i = 0; i < text.length; i++) {
+      var inputLength = text[i].getElementsByTagName('input')[0].value.length;
+      console.log(inputLength);
+      text[i].getElementsByTagName('label')[0].innerHTML = inputLength;
+        // console.log(text[i].value);
     }
 }

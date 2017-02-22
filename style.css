@@ -20,3 +20,7 @@ li{
 .hideText{
   display: none;
 }
+
+label{
+  margin-left: 5px;
+}
